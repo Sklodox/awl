@@ -1,0 +1,614 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V16" />
+  <DocumentInfo>
+    <Created>2023-02-28T11:32:01.4394329Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>SINAMICS Startdrive Advanced</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G130, G150, S120, S150, SINAMICS MV, S210</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>SINAMICS Startdrive G110M, G120, G120C, G120D, G120P</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V16</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.OB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <HeaderAuthor />
+      <HeaderFamily />
+      <HeaderName />
+      <HeaderVersion>0.1</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v4">
+  <Section Name="Input">
+    <Member Name="Initial_Call" Datatype="Bool" Accessibility="Public" Informative="true">
+      <Comment>
+        <MultiLanguageText Lang="en-US">Initial call of this OB</MultiLanguageText>
+      </Comment>
+    </Member>
+    <Member Name="Remanence" Datatype="Bool" Accessibility="Public" Informative="true">
+      <Comment>
+        <MultiLanguageText Lang="en-US">=True, if remanent data are available</MultiLanguageText>
+      </Comment>
+    </Member>
+  </Section>
+  <Section Name="Temp" />
+  <Section Name="Constant" />
+</Sections></Interface>
+      <IsIECCheckEnabled>false</IsIECCheckEnabled>
+      <MemoryLayout>Optimized</MemoryLayout>
+      <Name>Main</Name>
+      <Number>1</Number>
+      <ProgrammingLanguage>LAD</ProgrammingLanguage>
+      <SecondaryType>ProgramCycle</SecondaryType>
+      <SetENOAutomatically>false</SetENOAutomatically>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>es-ES</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <SW.Blocks.CompileUnit ID="3" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StatementList xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StatementList/v4">
+  <StlStatement UId="21">
+    <StlToken Text="A" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="FirstScan" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="25">
+    <StlToken Text="JNB" />
+    <Access Scope="Label">
+      <Label Name="FS" />
+    </Access>
+  </StlStatement>
+  <StlStatement UId="28">
+    <StlToken Text="S" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X0" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="31">
+    <StlToken Text="R" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X1" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="33">
+    <StlToken Text="R" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X2" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="23">
+    <StlToken Text="R" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X3" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="27">
+    <LabelDeclaration>
+      <Label Name="FS" />
+    </LabelDeclaration>
+    <StlToken Text="NOP_0" />
+  </StlStatement>
+  <StlStatement UId="36">
+    <StlToken Text="EMPTY_LINE" />
+  </StlStatement>
+  <StlStatement UId="22">
+    <LineComment Inserted="false">
+      <Text>A</Text>
+    </LineComment>
+    <StlToken Text="COMMENT" />
+  </StlStatement>
+</StatementList></NetworkSource>
+          <ProgrammingLanguage>STL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="4" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="8" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StatementList xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StatementList/v4">
+  <StlStatement UId="23">
+    <StlToken Text="A" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X0" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="25">
+    <StlToken Text="JNB" />
+    <Access Scope="Label">
+      <Label Name="X0" />
+    </Access>
+  </StlStatement>
+  <StlStatement UId="21">
+    <StlToken Text="R" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="Rojo" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="28">
+    <StlToken Text="S" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="Verde" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="30">
+    <StlToken Text="A" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="PulsadorMarcha" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="32">
+    <StlToken Text="S" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X1" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="34">
+    <StlToken Text="R" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X0" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="35">
+    <LabelDeclaration>
+      <Label Name="X0" />
+    </LabelDeclaration>
+    <StlToken Text="NOP_0" />
+  </StlStatement>
+  <StlStatement UId="22">
+    <StlToken Text="EMPTY_LINE" />
+  </StlStatement>
+</StatementList></NetworkSource>
+          <ProgrammingLanguage>STL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="9" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="D" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StatementList xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StatementList/v4">
+  <StlStatement UId="23">
+    <StlToken Text="A" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X1" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="25">
+    <StlToken Text="JNB" />
+    <Access Scope="Label">
+      <Label Name="X1" />
+    </Access>
+  </StlStatement>
+  <StlStatement UId="21">
+    <StlToken Text="L" />
+    <Access Scope="TypedConstant">
+      <Constant>
+        <ConstantValue>S5T#5S</ConstantValue>
+      </Constant>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="28">
+    <StlToken Text="Free" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="T1" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="30">
+    <StlToken Text="OnDelay" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="T1" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="32">
+    <StlToken Text="A" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="T1" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="34">
+    <StlToken Text="S" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X2" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="36">
+    <StlToken Text="R" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X1" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="37">
+    <LabelDeclaration>
+      <Label Name="X1" />
+    </LabelDeclaration>
+    <StlToken Text="NOP_0" />
+  </StlStatement>
+  <StlStatement UId="22">
+    <StlToken Text="EMPTY_LINE" />
+  </StlStatement>
+</StatementList></NetworkSource>
+          <ProgrammingLanguage>STL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="E" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="10" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="12" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StatementList xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StatementList/v4">
+  <StlStatement UId="23">
+    <StlToken Text="A" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X2" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="25">
+    <StlToken Text="JNB" />
+    <Access Scope="Label">
+      <Label Name="X2" />
+    </Access>
+  </StlStatement>
+  <StlStatement UId="27">
+    <StlToken Text="S" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="Amarillo" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="29">
+    <StlToken Text="L" />
+    <Access Scope="TypedConstant">
+      <Constant>
+        <ConstantValue>S5T#2S</ConstantValue>
+      </Constant>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="32">
+    <StlToken Text="Free" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="T2" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="34">
+    <StlToken Text="OnDelay" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="T2" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="36">
+    <StlToken Text="A" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="T2" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="38">
+    <StlToken Text="S" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X3" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="40">
+    <StlToken Text="R" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X2" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="21">
+    <LabelDeclaration>
+      <Label Name="X2" />
+    </LabelDeclaration>
+    <StlToken Text="NOP_0" />
+  </StlStatement>
+  <StlStatement UId="22">
+    <StlToken Text="EMPTY_LINE" />
+  </StlStatement>
+</StatementList></NetworkSource>
+          <ProgrammingLanguage>STL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="13" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="15" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <SW.Blocks.CompileUnit ID="17" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><StatementList xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/StatementList/v4">
+  <StlStatement UId="23">
+    <StlToken Text="A" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X3" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="25">
+    <StlToken Text="JNB" />
+    <Access Scope="Label">
+      <Label Name="X3" />
+    </Access>
+  </StlStatement>
+  <StlStatement UId="21">
+    <StlToken Text="R" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="Verde" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="28">
+    <StlToken Text="R" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="Amarillo" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="30">
+    <StlToken Text="S" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="Rojo" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="32">
+    <StlToken Text="L" />
+    <Access Scope="TypedConstant">
+      <Constant>
+        <ConstantValue>S5T#30S</ConstantValue>
+      </Constant>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="34">
+    <StlToken Text="Free" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="T3" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="36">
+    <StlToken Text="OnDelay" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="T3" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="40">
+    <StlToken Text="A" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="T3" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="42">
+    <StlToken Text="S" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X0" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="44">
+    <StlToken Text="R" />
+    <Access Scope="GlobalVariable">
+      <Symbol>
+        <Component Name="X3" />
+      </Symbol>
+    </Access>
+  </StlStatement>
+  <StlStatement UId="37">
+    <LabelDeclaration>
+      <Label Name="X3" />
+    </LabelDeclaration>
+    <StlToken Text="NOP_0" />
+  </StlStatement>
+  <StlStatement UId="22">
+    <StlToken Text="EMPTY_LINE" />
+  </StlStatement>
+</StatementList></NetworkSource>
+          <ProgrammingLanguage>STL</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="18" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>
+      <MultilingualText ID="1C" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="1D" CompositionName="Items">
+            <AttributeList>
+              <Culture>es-ES</Culture>
+              <Text>"Main Program Sweep (Cycle)"</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.OB>
+</Document>
