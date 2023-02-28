@@ -196,7 +196,7 @@
     <StlToken Text="R" />
     <Access Scope="GlobalVariable">
       <Symbol>
-        <Component Name="Rojo" />
+        <Component Name="Azul" />
       </Symbol>
     </Access>
   </StlStatement>
